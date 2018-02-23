@@ -19,7 +19,7 @@ import java.util.List;
  * Created by barba on 2018. 01. 08..
  */
 
-public class AccountAdapter extends RecyclerView.Adapter<AccountAdapter.ViewHolder> {
+public class  AccountAdapter extends RecyclerView.Adapter<AccountAdapter.ViewHolder> {
 
     private List<KalAuth> auths;
     private Context context;

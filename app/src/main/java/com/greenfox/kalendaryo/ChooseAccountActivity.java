@@ -10,18 +10,13 @@ import android.view.View;
 import android.widget.Button;
 
 import com.greenfox.kalendaryo.adapter.AccountAdapter;
-import com.greenfox.kalendaryo.fragments.KalendarFragment;
 import com.greenfox.kalendaryo.httpconnection.ApiService;
 import com.greenfox.kalendaryo.httpconnection.RetrofitClient;
-import com.greenfox.kalendaryo.models.CalendarId;
 import com.greenfox.kalendaryo.models.KalMerged;
 import com.greenfox.kalendaryo.models.KalPref;
-import com.greenfox.kalendaryo.models.Kalendar;
 import com.greenfox.kalendaryo.models.MergedKalendarResponse;
 
-import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.List;
 
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -71,7 +66,7 @@ public class ChooseAccountActivity extends AppCompatActivity {
                     }
                 });
 
-                Intent i = new Intent(ChooseAccountActivity.this, TabViewActivity.class);
+                Intent i = new Intent(ChooseAccountActivity.this, MainActivity.class);
                 startActivity(i);
             }
         });
